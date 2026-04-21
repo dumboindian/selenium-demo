@@ -18,7 +18,7 @@
             <version>4.21.0</version>
         </dependency>
 
-        <!-- JUnit 5 (IMPORTANT for @Test + Assertions) -->
+        <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -31,7 +31,7 @@
     <build>
         <plugins>
 
-            <!-- Runs JUnit 5 tests in Maven -->
+            <!-- Runs JUnit tests in Maven -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>

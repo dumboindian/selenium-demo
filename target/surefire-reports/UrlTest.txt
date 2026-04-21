@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: EdgeTest
+Test set: UrlTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.718 s -- in EdgeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.668 s -- in UrlTest

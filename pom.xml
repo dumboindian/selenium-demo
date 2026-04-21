@@ -11,14 +11,14 @@
 
     <dependencies>
 
-        <!-- Selenium -->
+        <!-- Selenium WebDriver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.21.0</version>
         </dependency>
 
-        <!-- JUnit -->
+        <!-- JUnit 5 (IMPORTANT for @Test + Assertions) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -31,7 +31,7 @@
     <build>
         <plugins>
 
-            <!-- Maven Surefire Plugin (Runs tests) -->
+            <!-- Runs JUnit 5 tests in Maven -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>

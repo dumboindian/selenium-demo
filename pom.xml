@@ -11,7 +11,7 @@
 
     <dependencies>
 
-        <!-- Selenium WebDriver -->
+        <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -31,7 +31,7 @@
     <build>
         <plugins>
 
-            <!-- Runs JUnit tests in Maven -->
+            <!-- Runs tests in Maven -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>

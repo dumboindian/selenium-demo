@@ -1,39 +1,25 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-
-import java.time.Duration;
 
 public class UrlTest {
 
     @Test
     public void verifyURL() {
 
-        // Set driver path
-        System.setProperty("webdriver.edge.driver", "C:\\selenium-demo\\drivers\\msedgedriver.exe");
+        // ChromeDriver path
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium-demo\\drivers\\chromedriver.exe");
 
-        // Headless mode for Jenkins stability
-        EdgeOptions options = new EdgeOptions();
-        options.addArguments("--headless=new");
-        options.addArguments("--disable-gpu");
-
-        WebDriver driver = new EdgeDriver(options);
+        WebDriver driver = new ChromeDriver();
 
         try {
-            // Timeout safety
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-            // Open site
             driver.get("https://www.google.com");
 
-            // Get current URL
             String url = driver.getCurrentUrl();
-            System.out.println("Current URL: " + url);
+            System.out.println("URL: " + url);
 
-            // Assertion (test validation)
-            Assertions.assertTrue(url.contains("google"), "URL does not contain google");
+            Assertions.assertTrue(url.contains("google"));
 
         } finally {
             driver.quit();
